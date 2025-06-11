@@ -14,7 +14,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const externalContracts = {
   42161: {
     BatchRegistry: {
-      address: "0x4Ad9949CCfCB803De50A5323D3ABE0C04d1a9Ebb",
+      address: "0x8b698d8f63f078369C067d58A4CC4B529F219CF7",
       abi: [
         {
           inputs: [
@@ -365,7 +365,7 @@ const externalContracts = {
       },
     },
     BatchGraduationNFT: {
-      address: "0x128eaDf6019B918bE93E333ED394c630b8C1aF4B",
+      address: "0xcce1408E40c388E6e9c99491FC2390b470417d40",
       abi: [
         {
           inputs: [
