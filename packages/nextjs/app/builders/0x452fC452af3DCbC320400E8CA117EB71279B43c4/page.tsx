@@ -1,20 +1,15 @@
 import Image from "next/image";
-import "../../../styles/coolguy.css";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
 import { FaDiscord, FaGithub, FaTelegram } from "react-icons/fa";
-import { Address } from "~~/components/scaffold-eth";
-
-const address = "0x452fC452af3DCbC320400E8CA117EB71279B43c4";
 
 const CoolGuyPage: NextPage = () => {
   return (
-    <main className="min-h-screen coolguy-bg flex items-center justify-center py-10 transition-colors">
-      <div className="coolguy-card transition-transform hover:scale-105 duration-300 shadow-2xl rounded-3xl p-10 max-w-lg w-full flex flex-col items-center border-2 border-transparent hover:border-blue-400 dark:hover:border-pink-400">
+    <main className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center py-10 transition-colors">
+      <div className="shadow-2xl rounded-3xl p-10 max-w-lg w-full flex flex-col items-center border-2 border-transparent bg-white/90 dark:bg-slate-900/90 transition-colors duration-300">
         {/* Animated Gradient Avatar Border */}
         <div className="relative mb-2">
           <div
-            className="absolute inset-0 rounded-full animate-spin-slow bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 p-1"
+            className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 p-1 animate-[spin_6s_linear_infinite]"
             style={{ zIndex: 1 }}
           />
           <div className="relative rounded-full bg-white dark:bg-gray-900 p-1" style={{ zIndex: 2 }}>
@@ -34,10 +29,6 @@ const CoolGuyPage: NextPage = () => {
         <h1 className="mt-4 text-4xl font-extrabold text-blue-800 dark:text-pink-300 tracking-tight drop-shadow-lg">
           Cool Guy
         </h1>
-        <div className="mt-2 mb-4">
-          <Address address={address} />
-        </div>
-        <ConnectButton showBalance={false} chainStatus="icon" />
         <p className="text-center text-lg text-gray-700 dark:text-gray-200 mb-4 mt-4">
           👋 Hi! I’m <span className="font-semibold text-blue-600 dark:text-pink-400">CoolGuy</span>, a passionate
           builder focused on <span className="text-purple-600 dark:text-purple-300 font-semibold">smart contracts</span>
