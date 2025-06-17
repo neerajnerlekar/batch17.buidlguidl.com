@@ -1704,6 +1704,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-icons/tabler@npm:^1.2.95":
+  version: 1.2.95
+  resolution: "@iconify-icons/tabler@npm:1.2.95"
+  dependencies:
+    "@iconify/types": "*"
+  checksum: 15a9125b3fc7349b742d15119d710b8c373a16c8069e2055f58ce45140616bfb0e55fe635277f7b503cb9f12ca17e14f89d24fbe4d378ce1b617dc5f28f78d9b
+  languageName: node
+  linkType: hard
+
+"@iconify/react@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@iconify/react@npm:6.0.0"
+  dependencies:
+    "@iconify/types": ^2.0.0
+  peerDependencies:
+    react: ">=16"
+  checksum: 65b42b4641d8b24b5d30d19b1c6e16f8dd7a1a3c9591bfb356e454fcf4bc4f9a81028ebc25716fe03d1dc19332cb84bb961bf3d7454674657672207dc1945d47
+  languageName: node
+  linkType: hard
+
+"@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 029f58542c160e9d4a746869cf2e475b603424d3adf3994c5cc8d0406c47e6e04a3b898b2707840c1c5b9bd5563a1660a34b110d89fce43923baca5222f4e597
+  languageName: node
+  linkType: hard
+
 "@img/sharp-darwin-arm64@npm:0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-darwin-arm64@npm:0.33.5"
@@ -3885,6 +3912,8 @@ __metadata:
   resolution: "@se-2/nextjs@workspace:packages/nextjs"
   dependencies:
     "@heroicons/react": ^2.1.5
+    "@iconify-icons/tabler": ^1.2.95
+    "@iconify/react": ^6.0.0
     "@rainbow-me/rainbowkit": 2.2.5
     "@tailwindcss/postcss": latest
     "@tanstack/react-query": ^5.59.15
