@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { Address } from "../../../components/scaffold-eth/Address/Address";
+import type { NextPage } from "next";
 
-<Address address="0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61" />;
-
-export default function otomdeeBuilderPage() {
+const otomdeeBuilderPage: NextPage = () => {
   return (
     <main className="max-w-xl mx-auto p-8">
       <section className="flex flex-col items-center gap-4">
@@ -70,4 +69,6 @@ export default function otomdeeBuilderPage() {
       </section>
     </main>
   );
-}
+};
+
+export default otomdeeBuilderPage;
