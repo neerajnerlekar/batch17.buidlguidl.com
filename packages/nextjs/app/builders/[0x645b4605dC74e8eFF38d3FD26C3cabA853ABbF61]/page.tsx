@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Address } from "../../../components/scaffold-eth/Address/Address";
 import type { NextPage } from "next";
 
-const otomdeeBuilderPage: NextPage = () => {
+const OtomdeeBuilderPage: NextPage = () => {
   return (
     <main className="max-w-xl mx-auto p-8">
       <section className="flex flex-col items-center gap-4">
@@ -71,4 +71,4 @@ const otomdeeBuilderPage: NextPage = () => {
   );
 };
 
-export default otomdeeBuilderPage;
+export default OtomdeeBuilderPage;
