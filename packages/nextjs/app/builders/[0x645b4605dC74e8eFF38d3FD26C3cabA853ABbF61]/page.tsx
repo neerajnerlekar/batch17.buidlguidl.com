@@ -2,6 +2,34 @@ import Image from "next/image";
 import { Address } from "../../../components/scaffold-eth/Address/Address";
 import type { NextPage } from "next";
 
+type SocialLink = {
+  href: string;
+  icon: string;
+  alt: string;
+  label: string;
+};
+
+const socialLinks: SocialLink[] = [
+  {
+    href: "https://x.com/0x_Money",
+    icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-x.svg",
+    alt: "X icon",
+    label: "Twitter",
+  },
+  {
+    href: "https://github.com/otomdee",
+    icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-github.svg",
+    alt: "GitHub icon",
+    label: "GitHub",
+  },
+  {
+    href: "https://telegram.me/Ox_Money",
+    icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-telegram.svg",
+    alt: "Telegram icon",
+    label: "Telegram",
+  },
+];
+
 const OtomdeeBuilderPage: NextPage = () => {
   return (
     <main className="max-w-xl mx-auto p-8">
@@ -28,43 +56,18 @@ const OtomdeeBuilderPage: NextPage = () => {
         </p>
         {/* Social Links */}
         <div className="flex gap-4 mt-6">
-          <a
-            href="https://x.com/0x_Money"
-            className="hover:underline flex items-center gap-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-x.svg" alt="X icon" width={20} height={20} />
-            Twitter
-          </a>
-          <a
-            href="https://github.com/otomdee"
-            className="hover:underline flex items-center gap-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-github.svg"
-              alt="X icon"
-              width={20}
-              height={20}
-            />
-            GitHub
-          </a>
-          <a
-            href="https://telegram.me/Ox_Money"
-            className="hover:underline flex items-center gap-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-telegram.svg"
-              alt="X icon"
-              width={20}
-              height={20}
-            />
-            Telegram
-          </a>
+          {socialLinks.map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="hover:underline flex items-center gap-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={link.icon} alt={link.alt} width={20} height={20} />
+              {link.label}
+            </a>
+          ))}
         </div>
       </section>
     </main>
