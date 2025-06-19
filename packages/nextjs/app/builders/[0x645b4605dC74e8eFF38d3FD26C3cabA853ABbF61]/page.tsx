@@ -7,6 +7,7 @@ type SocialLink = {
   icon: string;
   alt: string;
   label: string;
+  className: string;
 };
 
 const socialLinks: SocialLink[] = [
@@ -15,18 +16,21 @@ const socialLinks: SocialLink[] = [
     icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-x.svg",
     alt: "X icon",
     label: "Twitter",
+    className: "dark:invert",
   },
   {
     href: "https://github.com/otomdee",
     icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-github.svg",
     alt: "GitHub icon",
     label: "GitHub",
+    className: "dark:invert",
   },
   {
     href: "https://telegram.me/Ox_Money",
     icon: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/icons8-telegram.svg",
     alt: "Telegram icon",
     label: "Telegram",
+    className: "dark:invert",
   },
 ];
 
@@ -64,7 +68,7 @@ const OtomdeeBuilderPage: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={link.icon} alt={link.alt} width={20} height={20} />
+              <Image src={link.icon} alt={link.alt} width={20} height={20} className={link.className} />
               {link.label}
             </a>
           ))}
