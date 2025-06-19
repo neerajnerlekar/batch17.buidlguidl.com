@@ -19,12 +19,12 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "github.com",
-        // if you need a specific path pattern, add it here (e.g. pathname: "/**")
+        
       },
       {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
-        pathname: "/**",      // this lets you load any path under avatars.githubusercontent.com
+        pathname: "/**",      
       },
     ],
   },
