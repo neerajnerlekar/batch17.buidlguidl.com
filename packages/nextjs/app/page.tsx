@@ -21,25 +21,10 @@ const Home: NextPage = () => {
           <p className="text-center text-lg">Get started by taking a look at your batch GitHub repository.</p>
           <p className="text-lg flex gap-2 justify-center">
             <span className="font-bold">Checked in builders count:</span>
-            <style jsx>{`
-              @keyframes pulseScale {
-                0%,
-                100% {
-                  transform: scale(1);
-                }
-                50% {
-                  transform: scale(1.4);
-                }
-              }
-              .pulse-scale {
-                animation: pulseScale 2s ease-in-out infinite;
-              }
-            `}</style>
-
             {isLoading ? (
               <span className="loading loading-spinner loading-sm"></span>
             ) : (
-              <span className="inline-block pulse-scale">{checkedInCount}</span>
+              <span className="inline-block animate-pulse">{checkedInCount}</span>
             )}
           </p>
         </div>
