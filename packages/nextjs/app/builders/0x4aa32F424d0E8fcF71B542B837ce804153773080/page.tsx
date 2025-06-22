@@ -28,27 +28,27 @@ const BuilderPage: NextPage = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-8 bg-gradient-to-tr from-indigo-900 via-purple-900 to-pink-900 text-gray-900">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-10">
+    <div className="flex flex-col items-center justify-center min-h-screen p-7 md:flex-row md:gap-8">
+      <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-xl">
+        <Image
+          src="https://avatars.githubusercontent.com/u/215039033?v=4"
+          alt="Bobby's Avatar"
+          width={256}
+          height={256}
+          className="object-cover"
+          priority
+        />
+      </div>
+      <div className="flex flex-col items-center justify-center md:items-start">
+        <div className="max-w-2xl mx-auto rounded-2xl shadow-2xl p-10">
           <div className="flex flex-col items-center space-y-6">
-            <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg">
-              <Image
-                src="https://avatars.githubusercontent.com/u/215039033?v=4"
-                alt="Bobby's Avatar"
-                width={128}
-                height={128}
-                className="object-cover"
-                priority
-              />
-            </div>
-            <h1 className="text-5xl font-extrabold drop-shadow-lg">Hi, I`&apos;`m Bobby!</h1>
+            <h1 className="text-5xl font-extrabold drop-shadow-lg">Hi, I&apos;m Bobby!</h1>
             <div>
               <Address address="0x4aa32F424d0E8fcF71B542B837ce804153773080" />
             </div>
             <p className="text-center text-lg max-w-xl break-words leading-relaxed text-gr-800">
-              I`&apos;`m passionate about blockchain and novel technologies. I`&apos;`m studying ZKPs. Hit me up if you
-              want to chat about it!
+              I&apos;m passionate about blockchain and novel technologies. I&apos;m studying ZKPs. Hit me up if you want
+              to chat about it!
             </p>
             <div className="flex space-x-8 mt-4">
               {icons.map(icon => (
