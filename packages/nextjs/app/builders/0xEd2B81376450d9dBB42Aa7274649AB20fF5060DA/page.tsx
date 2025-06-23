@@ -54,7 +54,6 @@ const PageAdashima = () => {
         <p className="text-lg text-center text-gray-300 mt-2">
           Passionate about building on Ethereum and exploring decentralized technologies. Always learning.
         </p>
-        {/* <p className="text-md text-gray-400 mt-1">Address: 0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA</p> */}
         <Address address="0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA" onlyEnsOrAddress />
         <div className="flex flex-wrap justify-center gap-4 mt-4">
           {socialLinks.map(link => (
