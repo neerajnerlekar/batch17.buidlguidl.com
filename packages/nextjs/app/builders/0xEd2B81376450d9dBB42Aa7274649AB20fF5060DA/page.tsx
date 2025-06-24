@@ -1,16 +1,15 @@
 import Image from "next/image";
+import type { NextPage } from "next";
 import { Address } from "~~/components/scaffold-eth";
 
 const socialLinks = [
   {
     href: "https://speedrunethereum.com/builders/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA",
     label: "SRE",
-    colorClass: "text-purple-300",
   },
   {
     href: "https://github.com/adashima152",
     label: "GitHub",
-    colorClass: "text-blue-300",
     Icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +26,6 @@ const socialLinks = [
   {
     href: "https://x.com/GallantZ152",
     label: "X",
-    colorClass: "text-blue-400",
     Icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" fill="currentColor">
         <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z" />
@@ -36,22 +34,22 @@ const socialLinks = [
   },
 ];
 
-const PageAdashima = () => {
+const PageAdashima: NextPage = () => {
   return (
     <main className="max-w-xl mx-auto p-6 bg-dark-blue">
       <div className="flex flex-col items-center gap-4">
         <div className="relative w-24 h-24 rounded-full overflow-hidden bg-slate-300 flex items-center justify-center">
           <Image
-            src={"/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA_avatar.jpg"}
+            src={"/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA_avatar.webp"}
             alt="Avatar"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="96px"
             className="rounded-full"
           />
         </div>
-        <h1 className="text-3xl font-bold text-white">Adashima152</h1>
+        <h1 className="text-3xl font-bold">Adashima152</h1>
         <p className="text-2xl text-center text-white-700">Adashima is here, glad to see you!</p>
-        <p className="text-lg text-center text-gray-300 mt-2">
+        <p className="text-lg text-center mt-2">
           Passionate about building on Ethereum and exploring decentralized technologies. Always learning.
         </p>
         <Address address="0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA" onlyEnsOrAddress />
@@ -62,7 +60,7 @@ const PageAdashima = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${link.colorClass} hover:underline flex items-center gap-1`}
+              className={"hover:underline flex items-center gap-1"}
             >
               {link.Icon ? (
                 <span className="w-5 h-5 flex items-center justify-center">{link.Icon}</span>
