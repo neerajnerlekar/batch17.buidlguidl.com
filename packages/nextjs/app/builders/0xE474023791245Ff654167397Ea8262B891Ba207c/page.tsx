@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NextPage } from "next";
+import { Address } from "~~/components/scaffold-eth";
 
 const CypherpunkPage: NextPage = () => {
   return (
@@ -43,7 +44,11 @@ const CypherpunkPage: NextPage = () => {
         {/* Identity Card */}
         <div className="bg-zinc-900 rounded-2xl shadow-md p-6 hover:shadow-lg hover:bg-zinc-800 transition-all text-center">
           <h2 className="text-2xl font-semibold mb-2">👤 Identity</h2>
-          <p className="text-green-400">0xE474023791.............262B891Ba207c</p>
+          <div className="flex justify-center">
+            <p className="text-green-400">
+              <Address address="0xE474023791245Ff654167397Ea8262B891Ba207c" />
+            </p>
+          </div>
         </div>
       </div>
     </main>
