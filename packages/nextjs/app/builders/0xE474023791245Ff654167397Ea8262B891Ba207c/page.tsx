@@ -45,9 +45,7 @@ const CypherpunkPage: NextPage = () => {
         <div className="bg-zinc-900 rounded-2xl shadow-md p-6 hover:shadow-lg hover:bg-zinc-800 transition-all text-center">
           <h2 className="text-2xl font-semibold mb-2">👤 Identity</h2>
           <div className="flex justify-center">
-            <p className="text-green-400">
-              <Address address="0xE474023791245Ff654167397Ea8262B891Ba207c" />
-            </p>
+            <Address address="0xE474023791245Ff654167397Ea8262B891Ba207c" />
           </div>
         </div>
       </div>
