@@ -9,7 +9,7 @@ const CypherpunkPage: NextPage = () => {
         <h1 className="text-4xl font-bold text-center">🕶️ neeraj27.eth Portfolio</h1>
 
         {/* Core Values Card */}
-        <div className="bg-zinc-900 rounded-2xl shadow-md p-6 hover:shadow-lg hover:bg-zinc-800 transition-all">
+        <div className="bg-zinc-900 rounded-2xl shadow-md p-6 transition-all">
           <h2 className="text-2xl font-semibold mb-4">🧠 Core Values</h2>
           <ul className="space-y-2">
             <li>✅ End-to-end encryption is non-negotiable</li>
