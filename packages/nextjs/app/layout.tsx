@@ -8,7 +8,7 @@ export const metadata = getMetadata({
   title: "Batch 17 Builders | Scaffold-ETH",
   description:
     "Forging the future of Ethereum ⛓️‍💥 one block at a time. Built with 🏗 Scaffold-ETH 2 by Batch 17 Builders.",
-  imageRelativePath: "/thumbnail.png",
+  imageRelativePath: "/thumbnail.jpg",
 });
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
