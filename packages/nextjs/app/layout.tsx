@@ -5,8 +5,10 @@ import "~~/styles/globals.css";
 import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
 
 export const metadata = getMetadata({
-  title: "Scaffold-ETH 2 App",
-  description: "Built with 🏗 Scaffold-ETH 2",
+  title: "Batch 17 Builders | Scaffold-ETH",
+  description:
+    "Forging the future of Ethereum ⛓️‍💥 one block at a time. Built with 🏗 Scaffold-ETH 2 by Batch 17 Builders.",
+  imageRelativePath: "/thumbnail.jpg",
 });
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
