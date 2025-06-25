@@ -4,7 +4,7 @@ import { Address } from "~~/components/scaffold-eth";
 
 const imgSize = { width: 32, height: 32 };
 const iconStyle =
-  "transition-transform hover:scale-125 text-indigo-500 dark:text-indigo-300 hover:text-indigo-700 dark:hover:text-indigo-400 flex items-center gap-1 text-lg";
+  "transition-transform hover:scale-125 dark:invert text-indigo-500 dark:text-indigo-300 hover:text-indigo-700 dark:hover:text-indigo-400 flex items-center gap-1 text-lg";
 
 const anchorStyle = "text-2xl hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg";
 
