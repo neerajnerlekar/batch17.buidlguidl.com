@@ -86,7 +86,7 @@ export const Header = () => {
             <Image alt="batch#17 logo" className="cursor-pointer" fill src="/logo.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">Batch #17 – Scaffold-ETH</span>
+            <span className="font-bold leading-tight">Batch #17</span>
             <span className="text-xs">Building the Decentralized Future</span>
           </div>
         </Link>
