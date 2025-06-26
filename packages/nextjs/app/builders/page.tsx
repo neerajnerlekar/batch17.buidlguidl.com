@@ -16,23 +16,30 @@ const BuildersPage: NextPage = () => {
 
   if (isLoading) {
     return (
-      <span className="flex items-center gap-1 text-gray-400 ml-2" title="Loading">
-        Loading...
-      </span>
+      <div>
+        <h1 className="text-3xl font-bold text-center p-5">Batch 17&apos;s builders</h1>
+        <span className="flex items-center gap-1 text-gray-400 ml-2" title="Loading">
+          Loading...
+        </span>
+      </div>
     );
   }
 
   if (!checkInEvents) {
     return (
-      <span className="flex items-center gap-1 text-gray-400 ml-2" title="Loading no data">
-        Loading...
-      </span>
+      <div>
+        <h1 className="text-3xl font-bold text-center p-5">Batch 17&apos;s builders</h1>
+        <span className="flex items-center gap-1 text-gray-400 ml-2" title="Loading no data">
+          Loading...
+        </span>
+      </div>
     );
   }
 
   return (
     <div>
-      <ul>
+      <h1 className="text-3xl font-bold text-center p-5">Batch 17&apos;s builders</h1>
+      <ul className="space-y-2">
         {checkInEvents.map(event => (
           <BatchMemberLink address={event.args.builder ?? ""} key={event.args.builder ?? ""} />
         ))}
@@ -42,6 +49,3 @@ const BuildersPage: NextPage = () => {
 };
 
 export default BuildersPage;
-
-//todo
-//change styling for page options based on builderPage
