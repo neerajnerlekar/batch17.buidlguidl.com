@@ -32,7 +32,7 @@ export const BatchMemberLink = ({ address }: BatchMemberLinkProps) => {
 
   if (exists === null) {
     return (
-      <div className="max-w-xl mx-auto p-5 dark:bg-slate-800 bg-slate-200 rounded-xl flex items-center gap-3 shadow transition duration-300 hover:scale-110">
+      <div className="max-w-xl mx-auto p-5 dark:bg-slate-800 bg-slate-200 rounded-xl flex items-center gap-3 shadow">
         <Address address={address} />
         <span className="animate-pulse">Loading builder page...</span>
       </div>
@@ -40,12 +40,11 @@ export const BatchMemberLink = ({ address }: BatchMemberLinkProps) => {
   }
 
   return (
-    <div className="max-w-xl mx-auto p-5 dark:bg-slate-800 bg-slate-200 rounded-xl flex items-center gap-3 shadow transition duration-300 hover:scale-110">
+    <div className="max-w-xl mx-auto p-5 dark:bg-slate-800 bg-slate-200 rounded-xl flex items-center gap-3 shadow">
       <Address address={address} />
       {exists && (
         <Link
           href={"/builders/" + address}
-          passHref
           className="link font-semibold dark:text-gray-200 text-gray-800 hover:underline"
         >
           Builder&apos;s page
