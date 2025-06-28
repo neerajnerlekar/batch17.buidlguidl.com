@@ -52,7 +52,7 @@ const BuildersPage: NextPage = () => {
   }
 
   return (
-    <div>
+    <div className="p-2">
       <h1 className="text-3xl font-bold text-center p-5">Batch 17&apos;s builders</h1>
       <ul className="space-y-2">
         {checkInEvents.map(event => (
