@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getBuilderDirectoryNames } from "~~/utils/scaffold-eth/getBuilders";
+import { getBuilderDirectoryNames } from "~~/utils/getBuilders";
 
 export async function GET() {
   const builderNames = getBuilderDirectoryNames();
